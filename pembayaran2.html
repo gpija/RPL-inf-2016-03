@@ -1,0 +1,148 @@
+<html>
+	<body>
+		<a href="#openModal">Open Modal</a>
+		
+		<div id="openModal" class="modalDialog">
+			<div>
+				<p>Notifikasi Pembayaran</p>
+				<hr>
+				<ul class="list">
+					<li>Pemberitahuan #1</li>
+					<li>Pemberitahuan #2</li>
+					<li>Pemberitahuan #3</li>
+					<li>Pemberitahuan #4</li>
+					<li>Pemberitahuan #5</li>
+					<li>Pemberitahuan #6</li>
+					<li>Pemberitahuan #7</li>
+					<li>Pemberitahuan #8</li>
+					<li>Pemberitahuan #9</li>
+					<li>Pemberitahuan #10</li>
+				</ul>
+				<input class="b1" type="button" onclick="location.href='#close'" value="KELUAR"/>
+				<input class="b2" type="button" onclick="location.href='#alertBox'" value="KONFIRMASI SEMUA"/>
+			</div>
+		</div>
+		
+		<div id="alertBox" class="alertDialog">
+			<div>
+				<p class="p1">Konfirmasi Berhasil</p>
+				<hr>
+				<img src="blueAlert.jpg" class="img"/>
+				<p class="p2">Semua pembayaran berhasil dikonfirmasi</p><br/>
+				<input type="button" onclick="location.href='#close'" value="OK"/><br/><br/>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+<style type="text/css">
+.alertDialog {
+    font-family: Helvetica;
+	visibility: hidden;
+}
+.alertDialog:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.alertDialog > div {
+	width: 370px;
+	left: 580px;
+    top: 230px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.alertDialog > div > p {
+	font-size: 14px;
+}
+.p1{
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.img {
+	width: 35px;
+	heigth: 35px;
+	margin: 20px;
+	margin-right: 5px;
+	margin-left: 25px;
+}
+.p2{
+	color: #343738;
+	float: right;
+	text-align: left;
+	margin: 20px;
+	margin-left: 15px;
+	margin-top: 28px;
+}
+.alertDialog > div > input[type=button] {
+	background-color: #0047AB;
+	width: 80px;
+	height: 28px;
+	border: none;
+    color: white;
+	text-align: center;
+	margin-left: 270px;
+	cursor: pointer;
+}
+.modalDialog {
+	font-family: Helvetica;
+	visibility: hidden;
+}
+.modalDialog:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 8px 20px 13px 20px;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.modalDialog > div > ul {
+	width: 357px;
+	height: 150px;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+	overflow: scroll;
+	text-color: #0047AB;
+}
+.modalDialog > div > ul > li{
+	color: #0047AB;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.modalDialog > div > p {
+	margin-top: 10px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.modalDialog > div > hr {
+	height: 2px;
+	background-color: #a5a9b0;
+}
+.b1 {
+	width: 110px;
+}
+.b2 {
+	width: 210px;
+}
+.modalDialog > div > input[type=button] {
+	background-color: #0047AB;
+	height: 38px;
+	font-size: 13px;
+	border: none;
+    color: white;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 6px;
+	cursor: pointer;
+}
+</style>
