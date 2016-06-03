@@ -1,0 +1,113 @@
+<html>
+	<body>
+		<a href="#alertBox">Open Modal</a>
+		
+		<div id="alertBox" class="alertDialog">
+			<div>
+				<p class="p1">Login Pemilik CV</p>
+				<a href="#close" class="close">x</a>
+				<hr>
+				<p class="p2">Masuk</p>
+				<hr class="hr">
+				<p class="p2">Nomor Pegawai</p>
+				<input type="text" placeholder="Nomor Pegawai"/>
+				<p class="p2">Password</p>
+				<input type="password" placeholder="Password"/>
+				<p class="p3" onclick="location.href='#close'">Lupa Password?</p>
+				<input type="button" onclick="location.href='#close'" value="Masuk"/><br/>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+<style type="text/css">
+.alertDialog {
+    font-family: Helvetica;
+	visibility: hidden;
+}
+.alertDialog:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.alertDialog > div {
+	width: 250px;
+	left: 630px;
+    top: 240px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.hr {
+	height: 2px;
+	background-color: #a5a9b0;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -5px;
+	margin-bottom: 25px;
+}
+.alertDialog > div > p {
+	font-size: 14px;
+}
+.p1{
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.p2{
+	color: #343738;
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.p3 {
+	font-size: 14px;
+	color: #343738;
+	text-align: left;
+	margin-top: 45px;
+	margin-left: 20px;
+	margin-bottom: 3px;
+	margin-right: 110px;
+	color: #0047AB;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.alertDialog > div > input[type=button] {
+	color: #0047AB;
+	width: 100px;
+	height: 28px;
+	border: none;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: #0047AB;
+}
+.alertDialog > div > input[type=text], input[type=password] {
+    width: 83%;
+    padding: 4px 5px;
+    box-sizing: border-box;
+	margin-left: 20px;
+	margin-top: -5px;
+}
+.close {
+	color: #a5a9b0;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.close:hover {
+	color: #000000;
+	text-decoration: none;
+}
+</style>
