@@ -1,0 +1,183 @@
+<html>
+	<body>
+		<a href="#alert">Open Modal</a>
+		
+		<div id="alert" class="alertDialog">
+			<div>
+				<p class="p1">Tracking Barang</p>
+				<a href="#close" class="close">x</a>
+				<hr>
+				<p class="p2">Tracking</p>
+				<hr class="hr">
+				<p class="p2">Kode Barang</p>
+				<input type="text" placeholder="Kode Barang"/>
+				<p class="p2">Password</p>
+				<input type="password" placeholder="Password"/>
+				<input type="button" onclick="location.href='#alertB'" value="Track"/><br/>
+			</div>
+		</div>
+		
+		<div id="alertB" class="alertBox">
+			<div>
+				<p class="p1">Tracking Barang</p>
+				<hr>
+				<p class="p21">Informasi Tracking</p>
+				<hr class="hr"><br/>
+				<p class="p21">Kode Barang</p>
+				<input class="text2" type="text" placeholder="Kode Barang"/><br/>
+				<p class="p21">Perkiraan Waktu Tiba</p>
+				<input class="text1" type="text" placeholder="Waktu"/>
+				<p class="p3">Jam</p><br/>
+				<p class="p21">Nama Lokasi</p>
+				<input class="text2" type="text" placeholder="Nama Lokasi"/><br/>
+				<p class="p21">Status Barang</p>
+				<select>
+					<option>Sudah Sampai</option>
+					<option>Belum Sampai</option>
+				</select>
+				<input type="button" onclick="location.href='#close'" value="OK"/><br/>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+<style type="text/css">
+.alertDialog, .alertBox {
+    font-family: Helvetica;
+	visibility: hidden;
+}
+.alertDialog:target, .alertBox:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.alertDialog > div {
+	width: 250px;
+	left: 630px;
+    top: 240px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.hr {
+	height: 2px;
+	background-color: #a5a9b0;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -5px;
+	margin-bottom: 25px;
+}
+.p1{
+	font-size: 14px;
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.p2{
+	font-size: 16px;
+	color: #343738;
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.alertDialog > div > input[type=button] {
+	color: #0047AB;
+	width: 100px;
+	height: 35px;
+	border: none;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 35px;
+	cursor: pointer;
+	background-color: #0047AB;
+}
+.alertDialog > div > input[type=text], input[type=password] {
+    width: 83%;
+    padding: 4px 5px;
+    box-sizing: border-box;
+	margin-left: 20px;
+	margin-top: -5px;
+}
+.close {
+	color: #a5a9b0;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.close:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.alertBox > div {
+	width: 620px;
+	left: 510px;
+    top: 100px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.alertBox > div > input[type=button] {
+	color: #0047AB;
+	width: 100px;
+	height: 35px;
+	border: none;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 35px;
+	cursor: pointer;
+	background-color: #0047AB;
+}
+.alertBox > div > input[type=text] {
+    padding: 3px 5px;
+    box-sizing: border-box;
+	margin-left: 230px;
+	margin-top: -39px;
+	float: left;
+}
+.text1 {
+	width: 10%;
+}
+.text2 {
+	width: 40%;
+}
+.alertBox > div > select {
+    width: 26%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+	margin-right: 232px;
+	margin-top: -39px;
+	float: right;
+}
+.margin {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.p21{
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.p3 {
+	color: #0047AB;
+    padding: 4px 5px;
+    box-sizing: border-box;
+	margin-left: 300px;
+	margin-top: -38px;
+	float: left;
+	font-weight: bold;
+}
+</style>

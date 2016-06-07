@@ -1,0 +1,194 @@
+<html>
+	<body>
+		<a href="#alertBox">Open Modal</a>
+		
+		<div id="alertBox" class="alertBox">
+			<div>
+				<p class="p1">Form Data Barang</p>
+				<a href="#close" class="close">x</a>
+				<hr>
+				<p class="p2">Form Data Barang</p>
+				<hr class="hr">
+				<p class="p2">Kode Barang</p>
+				<p class="p3">876xxxxxx</p>
+				<div class="margin"></div>
+				<p class="p2">Nama Pengirim</p>
+				<input type="text" placeholder="Nama pengirim"/>
+				<p class="p2">No tlp Pengirim</p>
+				<input type="text" placeholder="No tlp pengirim"/>
+				<p class="p2">E-mail Pengirim</p>
+				<input type="text" placeholder="E-mail pengirim"/>
+				<div class="margin"></div>
+				<p class="p2">Nama Penerima</p>
+				<input type="text" placeholder="Nama penerima"/>
+				<p class="p2">No tlp Penerima</p>
+				<input type="text" placeholder="No tlp penerima"/>
+				<p class="p2">Alamat Penerima</p>
+				<input type="text" placeholder="Alamat penerima"/>
+				<div class="margin"></div>
+				<p class="p2">Jenis Barang</p>
+				<select>
+					<option>Makanan</option>
+					<option>Pecah Belah</option>
+					<option>Elektronik</option>
+					<option>Berkas Penting</option>
+				</select>
+				<p class="p2">Password Pengirim</p>
+				<input type="password" placeholder="Password pengirim"/>
+				<p class="p2">Harga Jasa</p>
+				<input type="text" placeholder="Harga jasa"/>
+				<div class="margin"></div>
+				<input type="button" onclick="location.href='#alertB'" value="SUBMIT"/><br/>
+			</div>
+		</div>
+
+		<div id="alertB" class="alertB">
+			<div>
+				<p class="p12">Submit Berhasil</p>
+				<hr>
+				<img src="blueAlert.jpg" class="img"/>
+				<p class="p22">Submit data barang berhasil dilakukan</p><br/>
+				<input type="button" onclick="location.href='#close'" value="OK"/><br/><br/>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+<style type="text/css">
+.alertBox, .alertB {
+    font-family: Helvetica;
+	visibility: hidden;
+}
+.alertBox:target, .alertB:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.alertBox > div {
+	width: 620px;
+	left: 510px;
+    top: 40px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.hr {
+	height: 2px;
+	background-color: #a5a9b0;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+	margin-bottom: 45px;
+}
+.alertBox > div > input[type=button] {
+	color: #0047AB;
+	width: 100px;
+	height: 35px;
+	border: none;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: #0047AB;
+}
+.alertBox > div > input[type=text], input[type=password] {
+    width: 46%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+	margin-right: 108px;
+	margin-top: -39px;
+	float: right;
+}
+.alertBox > div > select {
+    width: 26%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+	margin-right: 232px;
+	margin-top: -39px;
+	float: right;
+}
+.margin {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.p1{
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.p2{
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.p3 {
+	color: #0047AB;
+    padding: 4px 5px;
+    box-sizing: border-box;
+	margin-right: 308px;
+	margin-top: -38px;
+	float: right;
+	font-weight: bold;
+}
+.close {
+	color: #a5a9b0;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.close:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.alertB > div {
+	width: 350px;
+	left: 580px;
+    top: 230px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.alertB > div > p {
+	font-size: 14px;
+}
+.p12{
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.img {
+	width: 35px;
+	heigth: 35px;
+	margin: 20px;
+	margin-right: 5px;
+	margin-left: 25px;
+}
+.p22{
+	color: #343738;
+	float: right;
+	text-align: left;
+	margin: 20px;
+	margin-top: 28px;
+	margin-left: 15px;
+}
+.alertB > div > input[type=button] {
+	background-color: #0047AB;
+	width: 80px;
+	height: 28px;
+	border: none;
+    color: white;
+	text-align: center;
+	margin-left: 250px;
+	cursor: pointer;
+}
+</style>

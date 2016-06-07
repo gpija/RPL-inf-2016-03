@@ -1,0 +1,174 @@
+<html>
+	<body>
+		<a href="#alertB">Open Modal</a>
+		
+		<div id="alertB" class="alertDialog">
+			<div>
+				<p class="p1">Cari Barang</p>
+				<a href="#close" class="close">x</a>
+				<hr>
+				<p class="p2">Cari Barang</p>
+				<hr class="hr">
+				<p class="p2">Kode Barang</p>
+				<input type="text" placeholder="Kode Barang"/><br/>
+				<input type="button" onclick="location.href='#alertBox'" value="SUBMIT"/><br/>
+			</div>
+		</div>
+		
+		<div id="alertBox" class="alertBox">
+			<div>
+				<p class="p1">Barang 876xxxxxx</p>
+				<hr>
+				<p class="p2">Data Barang</p>
+				<hr class="hr">
+				<p class="p2">Kode Barang</p>
+				<p class="p3">876xxxxxx</p>
+				<div class="margin"></div>
+				<p class="p2">Nama Pengirim</p>
+				<input type="text" placeholder="Nama pengirim"/>
+				<p class="p2">No tlp Pengirim</p>
+				<input type="text" placeholder="No tlp pengirim"/>
+				<p class="p2">E-mail Pengirim</p>
+				<input type="text" placeholder="E-mail pengirim"/>
+				<div class="margin"></div>
+				<p class="p2">Nama Penerima</p>
+				<input type="text" placeholder="Nama penerima"/>
+				<p class="p2">No tlp Penerima</p>
+				<input type="text" placeholder="No tlp penerima"/>
+				<p class="p2">Alamat Penerima</p>
+				<input type="text" placeholder="Alamat penerima"/>
+				<div class="margin"></div>
+				<p class="p2">Jenis Barang</p>
+				<input type="text" placeholder="Jenis barang"/>
+				<p class="p2">Password Pengirim</p>
+				<input type="password" placeholder="Password pengirim"/>
+				<p class="p2">Harga Jasa</p>
+				<input type="text" placeholder="Harga jasa"/>
+				<div class="margin"></div>
+				<input type="button" onclick="location.href='#close'" value="OK"/><br/>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+<style type="text/css">
+.alertDialog, .alertBox {
+    font-family: Helvetica;
+	visibility: hidden;
+}
+.alertDialog:target, .alertBox:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.alertDialog > div {
+	width: 350px;
+	left: 630px;
+    top: 240px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.hr {
+	height: 2px;
+	background-color: #a5a9b0;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -5px;
+	margin-bottom: 35px;
+}
+.alertDialog, .alertBox > div > p {
+	font-size: 16px;
+}
+.p1{
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.p2{
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.p3 {
+	color: #0047AB;
+    padding: 4px 5px;
+    box-sizing: border-box;
+	margin-right: 308px;
+	margin-top: -38px;
+	float: right;
+	font-weight: bold;
+}
+.alertDialog > div > input[type=button] {
+	color: #0047AB;
+	width: 100px;
+	height: 35px;
+	border: none;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	cursor: pointer;
+	background-color: #0047AB;
+}
+.alertDialog > div > input[type=text]{
+	width: 46%;
+    padding: 4px 5px;
+    box-sizing: border-box;
+	margin-right: 20px;
+	margin-top: -38px;
+	float: right;
+}
+.close {
+	color: #a5a9b0;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.close:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.alertBox > div {
+	width: 620px;
+	left: 510px;
+    top: 40px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.alertBox > div > input[type=button] {
+	color: #0047AB;
+	width: 100px;
+	height: 35px;
+	border: none;
+    color: white;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: #0047AB;
+}
+.alertBox > div > input[type=text], input[type=password] {
+    width: 46%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+	margin-right: 108px;
+	margin-top: -39px;
+	float: right;
+}
+.margin {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+</style>
