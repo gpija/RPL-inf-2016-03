@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informasi</title>	
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="ckeditor/style.js"></script>
+
+
+</head>
+	<body>
+		<div id="box">
+		<h3>Pengisian Informasi</h3>
+		<form>
+			<table>
+				<tr>
+					<td>Judul</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><textarea name="artikel" class="ckeditor"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" onclick="location.href='#alertBox'" value="SUBMIT"/></td>
+				</tr>
+ 
+			</table>
+		</form>
+		</div>
+		<div id="alertBox" class="alertDialog">
+			<div>
+				<p class="p1">Submit Berhasil</p>
+				<hr>
+				<p class="p2">Informasi berhasil di tambah </p>
+				<input type="button" onclick="location.href='#close'" value="OK"/>
+			</div>
+		</div>
+		
+<style type="text/css">
+	body{
+	font-family: Helvetica;
+
+	}
+	#box{
+	margin: 50px auto;
+	background: #ffff;
+	width: 800px;
+	height: 500px;
+	padding: 20px;
+	}
+	h3{
+	text-align: auto;
+	color: #0047AB;
+	margin: 20px;
+	margin-left: 15px;
+
+	}
+
+	table tr input{
+	width: 700px;
+	height: 30px;
+	padding-left: 20px;
+	font-size: 12pt;
+	}
+
+	table tr input[type=button] {
+	background-color: #0047AB;
+	width: 110px;
+	height: 38px;
+	border: none;
+    color: white;
+	text-align: center;
+	cursor: pointer;
+}
+.alertDialog {
+    font-family: Helvetica;
+	visibility: hidden;
+}
+.alertDialog:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.alertDialog > div {
+	width: 450px;
+	left: 580px;
+    top: 230px;
+	position: fixed;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.alertDialog > div > p {
+	font-size: 14px;
+}
+.p1{
+	color: #000000;
+	margin: 0px;
+	margin-bottom: -7px;
+	text-align: center;
+}
+.img {
+	width: 35px;
+	heigth: 35px;
+	margin: 20px;
+	margin-right: 5px;
+	margin-left: 25px;
+}
+.p2{
+	color: #343738;
+	float: center;
+	text-align: center;
+	margin: 20px;
+	margin-left: 15px;
+}
+.alertDialog > div > input[type=button] {
+	background-color: #0047AB;
+	width: 80px;
+	height: 28px;
+	border: none;
+    color: white;
+	text-align: center;
+	margin-left: 345px;
+	cursor: pointer;
+}
+.modalDialog {
+	font-family: Helvetica;
+	visibility: hidden;
+}
+.modalDialog:target {
+	visibility: visible;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 8px 20px 13px 20px;
+	background: #fffffff;
+	border: 1px solid #a5a9b0;
+}
+.modalDialog > div > p {
+	padding: 15px 0px 0px 0px;
+	color: #0047AB;
+	font-weight: bold;
+}
+.modalDialog > div > hr {
+	height: 2px;
+	background-color: #a5a9b0;
+}
+.close {
+	color: #a5a9b0;
+	position: absolute;
+	right: 6px;
+	top: 4px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.close:hover {
+	color: #000000;
+	text-decoration: none;
+}
+	</style>
+
+
+
+	</body>
+</html>
